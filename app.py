@@ -220,10 +220,10 @@ with tab1:
 
         Score Global : <b>{row['Score_Final']:.2f}</b><br><br>
 
-        Classement Famille 1 : {int(row['Classement_Famille_1'])}<br>
-        Classement Famille 2 : {int(row['Classement_Famille_2'])}<br>
-        Classement Famille 3 : {int(row['Classement_Famille_3'])}<br>
-        Classement Famille 4 : {int(row['Classement_Famille_4'])}
+        Classement Famille 1 : {round(row['Classement_Famille_1'])}<br>
+        Classement Famille 2 : {round(row['Classement_Famille_2'])}<br>
+        Classement Famille 3 : {round(row['Classement_Famille_3'])}<br>
+        Classement Famille 4 : {round(row['Classement_Famille_4'])}
         """
 
         fig.update_layout(
