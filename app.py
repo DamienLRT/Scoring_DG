@@ -234,7 +234,7 @@ with tab1:
             polar=dict(
                 radialaxis=dict(
                     visible=True,
-                    range=[0, 100],
+                    range=[0, 1],
                     showticklabels=False,
                     showgrid=True
                 )
