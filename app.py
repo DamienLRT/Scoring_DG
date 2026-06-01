@@ -4,6 +4,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 import streamlit as st
 
+def affichage_classement(valeur):
+    if pd.isna(valeur):
+        return "Non évalué"
+    return str(int(valeur))
 
 # CONFIG
 
@@ -215,16 +219,16 @@ with tab1:
         # Encart d'informations
         # ==========================
 
-        annotation_text = f"""
-        <b>{selected_dg}</b><br><br>
+annotation_text = f"""
+<b>{selected_dg}</b><br><br>
 
-        Score Global : <b>{row['Score_Final']:.2f}</b><br><br>
+Score Global : <b>{row['Score_Final']:.2f}</b><br><br>
 
-        Classement Famille 1 : {round(row['Classement_Famille_1'])}<br>
-        Classement Famille 2 : {round(row['Classement_Famille_2'])}<br>
-        Classement Famille 3 : {round(row['Classement_Famille_3'])}<br>
-        Classement Famille 4 : {round(row['Classement_Famille_4'])}
-        """
+Classement Famille 1 : {affichage_classement(row['Classement_Famille_1'])}<br>
+Classement Famille 2 : {affichage_classement(row['Classement_Famille_2'])}<br>
+Classement Famille 3 : {affichage_classement(row['Classement_Famille_3'])}<br>
+Classement Famille 4 : {affichage_classement(row['Classement_Famille_4'])}
+"""
 
         fig.update_layout(
             polar=dict(
