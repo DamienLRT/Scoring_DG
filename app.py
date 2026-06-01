@@ -219,22 +219,22 @@ with tab1:
         # Encart d'informations
         # ==========================
 
-    annotation_text = f"""
-    <b>{selected_dg}</b><br><br>
+        annotation_text = f"""
+        <b>{selected_dg}</b><br><br>
 
-    Score Global : <b>{row['Score_Final']:.2f}</b><br><br>
+        Score Global : <b>{row['Score_Final']:.2f}</b><br><br>
 
-    Classement Famille 1 : {affichage_classement(row['Classement_Famille_1'])}<br>
-    Classement Famille 2 : {affichage_classement(row['Classement_Famille_2'])}<br>
-    Classement Famille 3 : {affichage_classement(row['Classement_Famille_3'])}<br>
-    Classement Famille 4 : {affichage_classement(row['Classement_Famille_4'])}
-    """
+        Classement Famille 1 : {affichage_classement(row['Classement_Famille_1'])}<br>
+        Classement Famille 2 : {affichage_classement(row['Classement_Famille_2'])}<br>
+        Classement Famille 3 : {affichage_classement(row['Classement_Famille_3'])}<br>
+        Classement Famille 4 : {affichage_classement(row['Classement_Famille_4'])}
+        """
 
         fig.update_layout(
             polar=dict(
                 radialaxis=dict(
                     visible=True,
-                    range=[0, 100],  # adapter si besoin
+                    range=[0, 100],
                     showticklabels=False,
                     showgrid=True
                 )
