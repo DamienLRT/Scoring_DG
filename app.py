@@ -223,8 +223,7 @@ with tab1:
         Classement Famille 1 : {int(row['Classement_Famille_1'])}<br>
         Classement Famille 2 : {int(row['Classement_Famille_2'])}<br>
         Classement Famille 3 : {int(row['Classement_Famille_3'])}<br>
-        Classement Famille 4 : {int(row['Classement_Famille_4'])}<br>
-        Classement Famille 5 : {int(row['Classement_Famille_5'])}
+        Classement Famille 4 : {int(row['Classement_Famille_4'])}
         """
 
         fig.update_layout(
